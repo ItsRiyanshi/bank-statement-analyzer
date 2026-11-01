@@ -1,0 +1,49 @@
+# Virtual environments
+venv/
+.venv/
+**/venv/
+**/.venv/
+
+# Environment files
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+bank_analyzer.db
+
+# Uploads & sensitive financial data
+uploads/
+uploads/*
+!uploads/.gitkeep
+*.pdf
+*.csv
+
+# Dependencies & Build artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Secrets
+credentials.json
+token.json
+token.pickle
+client_secret*.json
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+

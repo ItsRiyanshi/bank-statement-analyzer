@@ -1,0 +1,44 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment files
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+bank_analyzer.db
+
+# Uploads & sensitive financial files
+uploads/
+uploads/*
+!uploads/.gitkeep
+*.pdf
+*.csv
+
+# Secrets & OAuth tokens
+credentials.json
+token.json
+token.pickle
+client_secret*.json
+*.pem
+*.key
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Integration test script
+test_integration.py

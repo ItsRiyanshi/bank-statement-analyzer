@@ -1,0 +1,123 @@
+# ==============================================================================
+# Comprehensive .gitignore for Bank Statement Intelligence & Financial Health Analyzer
+# ==============================================================================
+
+# --- Python Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+**/venv/
+**/.venv/
+
+# --- Environment & Configuration Files (Strictly Ignored) ---
+.env
+.env.*
+*.env
+*.env.local
+*.env.production
+*.env.development
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# Allow committed documentation / template examples ONLY
+!.env.example
+!*.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# --- Databases & Persistent Storage ---
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.bak
+*.backup
+bank_analyzer.db
+backend/bank_analyzer.db
+
+# --- Financial Documents & Uploads (Strictly Ignored) ---
+*.pdf
+*.csv
+uploads/
+uploads/*
+!uploads/.gitkeep
+backend/uploads/
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# --- Credentials & API Secrets (Strictly Ignored) ---
+credentials.json
+backend/credentials.json
+token.json
+backend/token.json
+token.pickle
+backend/token.pickle
+client_secret*.json
+backend/client_secret*.json
+*.pem
+*.key
+*.cert
+secrets/
+
+# --- Python Build & Cache ---
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Node / Frontend Artifacts ---
+node_modules/
+**/node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Local Test & Integration Scripts with Sensitive Test Data ---
+test_integration.py
+backend/test_integration.py
+
+# --- Operating System & Editor Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
